@@ -1,14 +1,19 @@
 
 public class Calculator {
     public static void main(String[] args) {
-        int c = add(5,6);
+        int a = 30;
+        int b = 5;
+        int c = add(a,b);
         System.out.println("Addition result:"+c);
 
-        c = sub(5,6);
+        c = sub(a,b);
         System.out.println("Subtraction result:"+c);
 
-        c = mult(5,6);
+        c = mult(a,b);
         System.out.println("Multiplication result:"+c);
+
+        c = div(a,b);
+        System.out.println("Division result:"+c);
     }
     public static int add (int a, int b) {
         return a + b;
@@ -21,5 +26,7 @@ public class Calculator {
         return a * b;
     }
 
-
+    public static int div (int a, int b) {
+        return a / b;
+    }
 }
